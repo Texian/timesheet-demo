@@ -25,6 +25,7 @@ export default function Post({ postData }) {
 	);
 }
 
+// Do NOT use to fetch an API route, as this will cause a server-side render error
 export async function getStaticPaths() {
   const paths = getAllPostIds();
   return {
@@ -33,6 +34,7 @@ export async function getStaticPaths() {
   };
 }
 
+// Do NOT use to fetch an API route, as this will cause a server-side render error
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id);
 	return {

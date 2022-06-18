@@ -43,6 +43,7 @@ export default function Home({ allPostsData }) {
 }
 
 // Using getStaticProps to fetch the post data allows the posts to be passed to 'Home' as props
+// Do NOT use to fetch an API route, as this will cause a server-side render error
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
