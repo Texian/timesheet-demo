@@ -1,4 +1,7 @@
-// Next.js as a React framework reduces the amount of code needed compared to pure React, which is a library that provides essential UI primitives but requires extra work to combine into a full web app. Babel script, for example, is removed and handled by Next and doesn't need to be thought about by the coder.
+/* Next.js as a React framework reduces the amount of code needed compared to pure React,
+which is a library that provides essential UI primitives but requires extra work
+to combine into a full web app. Babel script, for example,
+is removed and handled by Next and doesn't need to be thought about by the coder. */
 
 import Head from "next/head"; // Head, instead of head, is a React component that handles the <head> tag
 import Layout, { siteTitle } from "../components/layout";
