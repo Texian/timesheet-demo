@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script"; // optimizes the <script> element when additional scripts are called
-import Layout from "../../nextjs-timesheet/components/layout";
+import Layout from "../components/layout";
 
 export default function Register() {
   return (
